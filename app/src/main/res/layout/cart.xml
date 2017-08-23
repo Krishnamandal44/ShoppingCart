@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/cart_page">
+        <FrameLayout
+            android:id="@+id/linear_cart"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:clickable="true"
+            >
+            <ImageView
+                android:id="@+id/action_bar_wallet_button"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_wallet"
+                android:layout_gravity="center"
+                android:elevation="2dp"
+                android:translationZ="0dp"
+                android:layout_weight="1.2"
+                android:padding="5dp"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                />
+            <TextView
+                android:id="@+id/cart_notification"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/notification_background"
+                android:elevation="3dp"
+                android:gravity="center"
+                android:visibility="visible"
+                android:textColor="@android:color/white"
+                android:text=""
+                android:textSize="8sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+    </LinearLayout>
+
